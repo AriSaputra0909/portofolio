@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 14</title>
+</head>
+<body>
+    <script>
+        function LuasTrapesium(){
+            let garisAtas = parseFloat(document.getElementById('garisAtas').value);
+            let garisBawah = parseFloat(document.getElementById('garisBawah').value);
+            let tinggi = parseFloat(document.getElementById('tinggi').value);
+
+            let luas = ((garisAtas+garisBawah)*tinggi)/2;
+            let hasil= "Hasil Luas Trapesuim adalah "+luas.toString();
+            alert(hasil);
+        }
+    </script>
+    <h1>Menghitung Luas Trapesuim</h1>
+    <form>
+        <label for="garisAtas">Masukkan Nilai:</label>
+        <input type="text" name="garisAtas" id="garisAtas" placeholder="Garis Atas">
+        <br>
+        <label for="garisBawah">Masukkan Nilai:</label>
+        <input type="text" name="garisBawah" id="garisBawah" placeholder="Garis Bawah">
+        <br>
+        <label for="Tinggi">Masukkan Nilai</label>
+        <input type="text" name="tinggi" id="tinggi" placeholder="Tinggi">
+        <br>
+        <button onclick="LuasTrapesium()">Hitung</button>
+    </form>
+</body>
+</html>

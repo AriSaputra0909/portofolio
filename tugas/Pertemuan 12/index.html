@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <meta property="og:image" content="https://agiftidea.com/wp-content/uploads/2020/04/birthday-celebration.jpeg">
+    <meta property="og:description" content="Go check out my card!">
+    <meta property="og:title" content="Happy Birthday!">
+    <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/red/gift-xxl.png">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        function go_rtan() {
+            alert('OMEDETOU!!')
+            window.location.href="https://youtube.com/shorts/VmeDT-PwT2E?si=RS2VY-ZBhzI_9FQL"
+        }
+    </script>
+</head>
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">Open the Letter!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtanny" onclick="go_rtan()"></div>
+        <h1>Congratulations!</h1>
+        <img src="asset/emilia.png" class="image">
+        <div class="messagebox">
+            Dear Friend, <br/>
+            Happy Birthday!!<br/>
+            Selamat Ulang Tahun Teman ku <br/>
+            Semoga semua hal yang di inginkan dapat tercapai <br/>
+            <br/>
+            Salam, <br/>
+            Ari Saputra</br>
+            <br>
+            Klik gambar diatas buat liat kejutan <br>
+        </div>
+        <img src="asset/puck.png" class="puck">
+        <br>
+    </div>
+</body>
+</html>

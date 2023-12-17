@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 18</title>
+</head>
+<body>
+    <script>
+        function menupilih() {
+            let pilihan = document.getElementById('pilih').value;
+            
+            switch (pilihan) {
+                case '1':
+                    let url1 = 'kalkulator.html';
+                    window.location.href = url1;
+                    break;
+                case '2':
+                    let url2 = 'luastrapesium.html';
+                    window.location.href=url2;
+                    break;
+                case '3':
+                    let url3 = 'deret.html';
+                    window.location.href=url3;
+                    break;
+                default:
+                alert("case tidak sesuai");
+                break;
+            }
+        }
+    </script>
+
+    <h2>Menu Pilihan</h2>
+    <p>Masukkan Pilihan: </p>
+    <p>[1] Menghitung Kalkulator</p>
+    <p>[2] Menghitung Luas Trapesium</p>
+    <p>[3] Menghitung Deret</p>
+    
+    <label for="pilihan">Masukkan Pilihan Anda: </label>
+    <input type="text" name="pilih" id="pilih">
+    <br>
+    <button onclick="menupilih()">Pilih</button>
+</body>
+</html>

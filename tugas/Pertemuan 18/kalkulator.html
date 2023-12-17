@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+</head>
+<body>
+    <script>
+       function hitung(){
+            var angka1 = parseFloat(document.getElementById("angka1").value);
+            var angka2 = parseFloat(document.getElementById("angka2").value);
+            var hasil;
+            var operator = (document.getElementById("operator").value);
+
+            if(operator=="tambah"){
+                hasil=angka1 + angka2;
+                alert(hasil);
+            }
+            else if(operator=="kurang"){
+                hasil=angka1 - angka2;
+                alert(hasil);
+            }
+            else if(operator=="bagi"){
+                hasil=angka1 / angka2;
+                alert(hasil);
+            }
+            else if(operator=="kali"){
+                hasil=angka1 * angka2;
+                alert(hasil);
+            }
+            else if(operator=="pangkat"){
+                hasil= Math.pow(angka1,angka2);
+                alert(hasil);
+            }
+       }
+    </script>
+
+    <h1>Kalkulator Sederhana</h1>
+    <form>
+        <label for="angka1">Nilai 1</label>
+        <input type="text" name="angka1" id="angka1">
+
+        <select name="operator" id="operator">
+            <option value="tambah">+</option>
+            <option value="kurang">-</option>
+            <option value="bagi">/</option>
+            <option value="kali">*</option>
+            <option value="pangkat">^</option>
+        </select>
+
+        <label for="angka2">Nilai 2</label>
+        <input type="text" name="angka2" id="angka2">
+
+        <button onclick="hitung()">hitung</button>
+    </form>
+</body>
+</html>
